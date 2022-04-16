@@ -645,8 +645,8 @@ Groups.Keybinds = Tabs.Main:AddLeftGroupbox('Keybinds')
     Groups.Keybinds:AddLabel('Bad'):AddKeyPicker('BadBind', { Default = 'Four', NoUI = true })
 
 Groups.Credits = Tabs.Main:AddRightGroupbox('Credits')
-    Groups.Credits:AddLabel('<font color="#3da5ff">wally</font> - script')
-    Groups.Credits:AddLabel('<font color="#de6cff">Sezei</font> - contributor')
+    Groups.Credits:AddLabel('<font color="#3da5ff">Nuy</font> - script')
+    Groups.Credits:AddLabel('<font color="#de6cff">Nuy</font> - contributor')
     Groups.Credits:AddLabel('Inori - ui library')
     Groups.Credits:AddLabel('Jan - old ui library')
 
@@ -659,12 +659,12 @@ Groups.Misc = Tabs.Main:AddRightGroupbox('Miscellaneous')
     Groups.Misc:AddDivider()
     Groups.Misc:AddButton('Unload script', function() pcall(shared._unload) end)
     Groups.Misc:AddButton('Copy discord', function()
-        if pcall(setclipboard, "https://wally.cool/discord") then
-            UI:Notify('Successfully copied discord link to your clipboard!', 5)
+        if pcall(setclipboard, "https://discord.gg/NCJtXcrC") then
+            UI:Notify('Successfully copied discord link to your clipboard! noobbbbbbbbb', 5)
         end
     end)
 
-    Groups.Misc:AddLabel('Menu toggle'):AddKeyPicker('MenuToggle', { Default = 'Delete', NoUI = true })
+    Groups.Misc:AddLabel('Menu toggle'):AddKeyPicker('MenuToggle', { Default = 'RightCtrl', NoUI = true })
 
     UI.ToggleKeybind = Options.MenuToggle
 
@@ -715,3 +715,4 @@ end
 
 
 UI:Notify(string.format('Loaded script in %.4f second(s)!', tick() - start), 3) 
+--Menu to
